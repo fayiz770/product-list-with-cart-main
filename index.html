@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
   
   <title>Frontend Mentor | Product list with cart</title>
 </head>
@@ -13,14 +14,20 @@
     <h1>Desserts</h1>
   </header>
   <main class="main">
-    <img src="assets/images/image-waffle-mobile.jpg" alt="image-waffle-mobile">
-    <div class="floting-cart-button">
-      <img src="assets/images/icon-add-to-cart.svg" alt="icon-add-to-cart">
-      <span>Add to Cart</span>
+    <div class="dessert-container">
+      <div class="image-and-card-button-container">
+        <img class="main-image" src="assets/images/image-waffle-mobile.jpg" alt="image-waffle-mobile">
+        <div class="floting-cart-button">
+          <img src="assets/images/icon-add-to-cart.svg" alt="icon-add-to-cart">
+          <span>Add to Cart</span>
+        </div>
+      </div>
+      <div class="info-container">
+        <p class="name">Waffle</p>
+        <p class="description">Waffle with Berries</p>
+        <p class="cost">$6.50</p>
+      </div>
     </div>
-    <p class="name">Waffle</p>
-    <p class="description">Waffle with Berries</p>
-    <p class="cost">$6.50</p>
   </main>
   <div class="cart">
     <h1 class="cart-title">Your Cart(7)</h1>
@@ -28,55 +35,61 @@
       <div class="info">
         <p class="cart-stuff-name">Classic Tiramisu</p>
         <div class="cost-calculation">
-          <span>1x</span>
-          <span>@ $5.50</span>
-          <span>$5.50</span>
-        </div>
-        <div class="x-icon">
-          <img src="assets/images/icon-remove-item.svg" alt="icon-remove-item">
+          <span class="x">1x</span>
+          <span class="at">@ $5.50</span>
+          <span class="total">$5.50</span>
         </div>
       </div>
+      <div class="x-icon">
+        <img src="assets/images/icon-remove-item.svg" alt="icon-remove-item">
+      </div>
+    </div>
 
+    <div class="stuff">
       <div class="info">
         <p class="cart-stuff-name">Vanilla Bean creme brulee</p>
         <div class="cost-calculation">
-          <span>4x</span>
-          <span>@ $7.00</span>
-          <span>$28.00</span>
-        </div>
-        <div class="x-icon">
-          <img src="assets/images/icon-remove-item.svg" alt="icon-remove-item">
+          <span class="x">4x</span>
+          <span class="at">@ $7.00</span>
+          <span class="total">$28.00</span>
         </div>
       </div>
+      <div class="x-icon">
+        <img src="assets/images/icon-remove-item.svg" alt="icon-remove-item">
+      </div>
+    </div>
 
+    <div class="stuff">
       <div class="info">
         <p class="cart-stuff-name">Vannila pana cota</p>
         <div class="cost-calculation">
-          <span>2x</span>
-          <span>@ $6.50</span>
-          <span>$13.00</span>
-        </div>
-        <div class="x-icon">
-          <img src="assets/images/icon-remove-item.svg" alt="icon-remove-item">
+          <span class="x">2x</span>
+          <span class="at">@ $6.50</span>
+          <span class="total">$13.00</span>
         </div>
       </div>
-
-      <div class="summary">
-        <p>Order Total</p>
-        <p>$46.50</p>
+      <div class="x-icon">
+        <img src="assets/images/icon-remove-item.svg" alt="icon-remove-item">
       </div>
-
-      <div class="delivery">
-        <img src="assets/images/icon-carbon-neutral.svg" alt="icon-carbon-neutral">
-        <p>This is a Carbon-neutral delivery</p>
-      </div>
-      <button class="button">Confirm Order</button>
     </div>
+
+    <div class="summary">
+      <p>Order Total</p>
+      <p class="summary-total">$46.50</p>
+    </div>
+
+    <div class="delivery">
+      <img src="assets/images/icon-carbon-neutral.svg" alt="icon-carbon-neutral">
+      <p>This is a <span class="carbon">carbon-neutral</span> delivery</p>
+    </div>
+    <button class="button">Confirm Order</button>
+    
   </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="index.js" type="module"></script>
 </body>
 </html>

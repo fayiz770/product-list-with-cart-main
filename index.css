@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red: hsl(14, 86%, 42%);
+    --green: hsl(159, 69%, 38%);
+    --rose-50: hsl(20, 50%, 98%);
+    --rose-100: hsl(13, 31%, 94%);
+    --rose-300: hsl(14, 25%, 72%);
+    --rose-400: hsl(7, 20%, 60%);
+    --rose-500: hsl(12, 20%, 44%);
+    --rose-900: hsl(14, 65%, 9%);
+    --font-family: 'Red Hat Text', sans-serif;
+}
+
+body {
+    background: var(--rose-100);
+    font-family: var(--font-family);
+    padding: 3em 2em;
+    display: grid;
+    gap: 3em;
+}
+
+.dessert-container {
+    display: grid;
+    gap: 3em;
+}
+
+.main-image {
+    position: relative;
+    border-radius: 0.5em;
+    width: 100%;
+}
+
+.image-and-card-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.floting-cart-button {
+    position: absolute;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 1em 2em;
+    border: 1px solid var(--rose-500);
+    border-radius: 5em;
+    background: white;
+    color: var(--rose-900);
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    bottom: -1.5em;
+}
+
+.info-container {
+    display: grid;
+    gap: 0.5em;
+}
+
+.name {
+    color: var(--rose-500);
+}
+
+.description {
+    font-weight: bold;
+    color: var(--rose-900);
+}
+
+.cost {
+    font-weight: bold;
+    color: var(--red);
+}
+
+.cart {
+    border-radius: 0.5em;
+    padding: 2em 1em;
+    background: white;
+    display: grid;
+    gap: 1em;
+}
+
+.cart-title {
+    color: var(--red);
+}
+
+.stuff {
+    border-bottom: 1px solid var(--rose-400);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.info {
+    display: grid;
+    gap: 1em;
+}
+
+.x-icon {
+    cursor: pointer;
+    border: 1px solid var(--red);
+    padding: 0.1em;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-stuff-name {
+    font-weight: bold;
+    color: var(--rose-900);
+}
+
+.cost-calculation {
+    display: flex;
+    gap: 1em;
+}
+
+.x {
+    color: var(--red);
+}
+
+.x,
+.total {
+    font-weight: bold;
+}
+
+.at {
+    color: var(--rose-400);
+}
+
+.total {
+    color: var(--rose-500);
+}
+
+.summary {
+    color: var(--rose-900);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+.summary-total {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.delivery {
+    border-radius: 1em;
+    background: var(--rose-100);
+    padding: 1em;
+    display: flex;
+    gap: 0.5em;
+}
+
+.carbon {
+    font-weight: bold;
+    color: var(--rose-900);
+}
+
+.button {
+    background: var(--red);
+    border: none;
+    border-radius: 5em;
+    padding: 1.5em;
+    font-weight: bolder;
+    color: white;
+    font-family: var(--font-family);
+    letter-spacing: 0.1em;
+}
