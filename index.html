@@ -10,67 +10,18 @@
   <title>Frontend Mentor | Product list with cart</title>
 </head>
 <body>
-  <header class="header">
-    <h1>Desserts</h1>
-  </header>
-  <main class="main">
-    <div class="dessert-container">
-      <div class="image-and-card-button-container">
-        <img class="main-image" src="assets/images/image-waffle-mobile.jpg" alt="image-waffle-mobile">
-        <div class="floting-cart-button">
-          <img src="assets/images/icon-add-to-cart.svg" alt="icon-add-to-cart">
-          <span>Add to Cart</span>
-        </div>
-      </div>
-      <div class="info-container">
-        <p class="name">Waffle</p>
-        <p class="description">Waffle with Berries</p>
-        <p class="cost">$6.50</p>
-      </div>
-    </div>
-  </main>
+  <div class="first">
+    <header class="header">
+      <h1>Desserts</h1>
+    </header>
+    <main class="main" id="container">
+    </main>
+  </div>
   <div class="cart">
-    <h1 class="cart-title">Your Cart(7)</h1>
-    <div class="stuff">
-      <div class="info">
-        <p class="cart-stuff-name">Classic Tiramisu</p>
-        <div class="cost-calculation">
-          <span class="x">1x</span>
-          <span class="at">@ $5.50</span>
-          <span class="total">$5.50</span>
-        </div>
-      </div>
-      <div class="x-icon">
-        <img src="assets/images/icon-remove-item.svg" alt="icon-remove-item">
-      </div>
-    </div>
-
-    <div class="stuff">
-      <div class="info">
-        <p class="cart-stuff-name">Vanilla Bean creme brulee</p>
-        <div class="cost-calculation">
-          <span class="x">4x</span>
-          <span class="at">@ $7.00</span>
-          <span class="total">$28.00</span>
-        </div>
-      </div>
-      <div class="x-icon">
-        <img src="assets/images/icon-remove-item.svg" alt="icon-remove-item">
-      </div>
-    </div>
-
-    <div class="stuff">
-      <div class="info">
-        <p class="cart-stuff-name">Vannila pana cota</p>
-        <div class="cost-calculation">
-          <span class="x">2x</span>
-          <span class="at">@ $6.50</span>
-          <span class="total">$13.00</span>
-        </div>
-      </div>
-      <div class="x-icon">
-        <img src="assets/images/icon-remove-item.svg" alt="icon-remove-item">
-      </div>
+    <h1 class="cart-title">Your Cart (<span class="number-of-desserts-selected">0</span>)</h1>
+    <div class="stuffs-container">
+      <img src="assets/images/illustration-empty-cart.svg" alt="illustration-empty-cart">
+      <p class="empty-text">Your added items will appear here</p>
     </div>
 
     <div class="summary">
@@ -88,7 +39,7 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/fayiz770" target="_blank">Your Name Here</a>.
   </div>
   <script src="index.js" type="module"></script>
 </body>

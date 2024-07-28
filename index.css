@@ -24,9 +24,19 @@ body {
     gap: 3em;
 }
 
+.first {
+    display: grid;
+    gap: 3em;
+}
+
 .dessert-container {
     display: grid;
     gap: 3em;
+}
+
+.main {
+    display: grid;
+    gap: 1em;
 }
 
 .main-image {
@@ -51,7 +61,9 @@ body {
     border-radius: 5em;
     background: white;
     color: var(--rose-900);
-    width: fit-content;
+    min-width: fit-content;
+    max-width: fit-content;
+    max-height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,4 +189,58 @@ body {
     color: white;
     font-family: var(--font-family);
     letter-spacing: 0.1em;
+}
+
+.summary,
+.delivery,
+.button {
+    display: none;
+}
+
+.stuffs-container {
+    padding: 2em 0;
+    display: grid;
+    place-items: center;
+    gap: 1em;
+}
+
+.empty-text {
+    color: var(--rose-500);
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (min-width: 768px){
+    body {
+        padding: 3em 10em;
+        display: grid;
+        grid-template-areas: 
+        'firs cart'
+        'attr attr'
+        ;
+    }
+
+    .main {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+    }
+
+
+    .first {
+        grid-area: firs;
+    }
+
+    .cart {
+        position: sticky;
+        grid-area: cart;
+        height: fit-content;
+    }
+
+    .attribution {
+        grid-area: attr;
+        text-align: center;
+    }
 }

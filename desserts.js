@@ -76,7 +76,7 @@ const desserts = [
         name: 'Panna Cotta',
         description: 'Vanilla Panna Cotta',
         cost: 6.50,
-        imageMobile: 'image-panna-cotta-moblile.jpg',
+        imageMobile: 'image-panna-cotta-mobile.jpg',
         imageTablet: 'image-panna-cotta-tablet.jpg',
         imageDesktop: 'image-panna-cotta-desktop.jpg'
     }
