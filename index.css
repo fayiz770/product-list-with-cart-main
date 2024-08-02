@@ -71,6 +71,11 @@ body {
     bottom: -1.5em;
 }
 
+.floting-cart-button:hover {
+    border: 2px solid var(--red);
+    color: var(--red);
+}
+
 .info-container {
     display: grid;
     gap: 0.5em;
@@ -189,6 +194,11 @@ body {
     color: white;
     font-family: var(--font-family);
     letter-spacing: 0.1em;
+}
+
+.button:hover {
+    background: var(--red);
+    color: white;
 }
 
 .summary,

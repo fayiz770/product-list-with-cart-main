@@ -1,5 +1,7 @@
 const desserts = [
     {
+        id: 1,
+        valume: 1,
         name: 'waffel',
         description: 'waffle with Berries',
         cost: 6.5,
@@ -9,6 +11,8 @@ const desserts = [
     }
     ,
     {
+        id: 2,
+        valume: 1,
         name: 'Crème Brûlée',
         description: 'Vanilla Bean Crème Brûlée',
         cost: 7.00,
@@ -17,7 +21,9 @@ const desserts = [
         imageDesktop: 'image-creme-brulee-desktop.jpg'
     }
     ,
-    {
+    {   
+        id: 3,
+        valume: 1,
         name: 'Macaron',
         description: 'Macaron Mix of Five',
         cost: 8.00,
@@ -27,6 +33,8 @@ const desserts = [
     }
     ,
     {
+        id: 4,
+        valume: 1,
         name: 'Tiramisu',
         description: 'Classic Tiramisu',
         cost: 5.50,
@@ -37,6 +45,8 @@ const desserts = [
     }
     ,
     {
+        id: 5,
+        valume: 1,
         name: 'Baklava',
         description: 'Pistachio Baklava',
         cost: 4.00,
@@ -46,6 +56,8 @@ const desserts = [
     }
     ,
     {
+        id: 6,
+        valume: 1,
         name: 'Pie',
         description: 'Lemon Meringue Pie',
         cost: 65.00,
@@ -55,6 +67,8 @@ const desserts = [
     }
     ,
     {
+        id: 7,
+        valume: 1,
         name: 'Cake',
         description: 'Red Velvet Cake',
         cost: 4.50,
@@ -64,6 +78,8 @@ const desserts = [
     }
     ,
     {
+        id: 8,
+        valume: 1,
         name: 'Brownie',
         description: 'Salted Caramel Brownie',
         cost: 4.50,
@@ -73,6 +89,8 @@ const desserts = [
     }
     ,
     {
+        id: 9,
+        valume: 1,
         name: 'Panna Cotta',
         description: 'Vanilla Panna Cotta',
         cost: 6.50,
