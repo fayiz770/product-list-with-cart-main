@@ -9,10 +9,10 @@ const dessertsElements = newDessertsArray.forEach(dessert => {
     container.innerHTML += 
     `   <div class="dessert-container">
             <div class="image-and-card-button-container">
-                <img class="main-image" src="assets/images/${width ? dessert.imageDesktop : dessert.imageMobile}" alt="${dessert.description}">
-                <div class="floting-cart-button" data-id="${dessert.id}">
-                    <img data-id="${dessert.id}" src="assets/images/icon-add-to-cart.svg" alt="icon-add-to-cart">
-                    <span data-id="${dessert.id}">Add to Cart</span>
+                <img class="main-image" src="assets/images/${width() ? dessert.imageDesktop : dessert.imageMobile}" alt="${dessert.description}">
+                <div class="floting-cart-button" id="I${dessert.id}">
+                    <img class="pointer" data-id="${dessert.id}" src="assets/images/icon-add-to-cart.svg" alt="icon-add-to-cart">
+                    <span class="pointer" data-id="${dessert.id}">Add to Cart</span>
                 </div>
             </div>
             <div class="info-container">

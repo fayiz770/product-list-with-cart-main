@@ -17,6 +17,7 @@
 }
 
 body {
+    user-select: none;
     background: var(--rose-100);
     font-family: var(--font-family);
     padding: 3em 2em;
@@ -54,19 +55,16 @@ body {
 
 .floting-cart-button {
     position: absolute;
-    cursor: pointer;
     font-weight: bold;
     padding: 1em 2em;
     border: 1px solid var(--rose-500);
     border-radius: 5em;
     background: white;
     color: var(--rose-900);
-    min-width: fit-content;
-    max-width: fit-content;
-    max-height: fit-content;
+    min-width: 80%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 1em;
     bottom: -1.5em;
 }
@@ -74,6 +72,10 @@ body {
 .floting-cart-button:hover {
     border: 2px solid var(--red);
     color: var(--red);
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 .info-container {
@@ -107,12 +109,18 @@ body {
     color: var(--red);
 }
 
+.stuffs-container {
+    display: grid;
+    place-items: center;
+}
+
 .stuff {
     border-bottom: 1px solid var(--rose-400);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1em;
+    width: 100%;
 }
 
 .info {
@@ -130,6 +138,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.x-icon:hover {
+    border: 2px solid var(--rose-900);
 }
 
 .cart-stuff-name {
@@ -186,6 +198,7 @@ body {
 }
 
 .button {
+    cursor: pointer;
     background: var(--red);
     border: none;
     border-radius: 5em;
@@ -197,8 +210,7 @@ body {
 }
 
 .button:hover {
-    background: var(--red);
-    color: white;
+    background: var(--rose-900);
 }
 
 .summary,
@@ -207,12 +219,6 @@ body {
     display: none;
 }
 
-.stuffs-container {
-    padding: 2em 0;
-    display: grid;
-    place-items: center;
-    gap: 1em;
-}
 
 .empty-text {
     color: var(--rose-500);
@@ -221,6 +227,17 @@ body {
 
 a {
     text-decoration: none;
+}
+
+.decrement,
+.increment {
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
 }
 
 @media (min-width: 768px){

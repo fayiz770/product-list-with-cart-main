@@ -60,7 +60,7 @@ const desserts = [
         valume: 1,
         name: 'Pie',
         description: 'Lemon Meringue Pie',
-        cost: 65.00,
+        cost: 6.50,
         imageMobile: 'image-meringue-mobile.jpg',
         imageTablet: 'image-meringue-tablet.jpg',
         imageDesktop: 'image-meringue-desktop.jpg'
